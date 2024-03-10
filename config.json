@@ -1,0 +1,19 @@
+{
+    "finetune":{
+        "ft_data_path": "data/Chinese-medical-dialogue-data/merge_data.json",
+        "pretain_model_path": "./Llama2-chat-13B-Chinese-50W",
+        "base_output_dir": "./ft_results",
+        "gpus": "0,1",
+        "per_device_train_batch_size": 1, 
+        "gradient_accumulation_steps": 4,
+        "learning_rate":2e-4,
+        "logging_steps":10,
+        "max_steps": 200,
+        "max_seq_length": 512
+    },
+    "merge_model":{
+      "pretain_model_path":"./Llama2-chat-13B-Chinese-50W",
+      "ft_model_path": "./ft_results",
+      "save_path": "./merge_model"
+    }
+  }
