@@ -1,0 +1,9 @@
+torch==2.0.0  
+transformers==4.30.0  
+sentencepiece==0.1.97
+gradio==3.50.0
+bitsandbytes
+accelerate
+scipy
+ipywidgets
+protobuf==3.20.1
